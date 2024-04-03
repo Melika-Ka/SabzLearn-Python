@@ -16,14 +16,14 @@
 - paradigm : الگو، شیوه و روش برنامه نویسی
 - یک زبان میتواند چندین پارادایم را پشتیبانی کند
 - paradigm
-    1. Imperative دستوری
-        - Procedual Programming برنامه نویسی پروسه ای
-        - Object Oriented Programing (OOP)برنامه نویسی شی گرا
-        - Parallel Processing رایانش موازی
-    2. Declarative
-        - Logical Programming برنامه نویسی منطقی
-        - Functional Programming برنامه نویسی تابعی
-        - Database Programming برنامه نویسی پایگاه داده
+  1. Imperative دستوری
+     - Procedual Programming برنامه نویسی پروسه ای
+     - Object Oriented Programing (OOP)برنامه نویسی شی گرا
+     - Parallel Processing رایانش موازی
+  2. Declarative
+     - Logical Programming برنامه نویسی منطقی
+     - Functional Programming برنامه نویسی تابعی
+     - Database Programming برنامه نویسی پایگاه داده
 
 ## S00-E10-py-what-is-python
 
@@ -91,18 +91,19 @@
 
 - syntax : how to code
 - rows
-    1. physical lines => ما میبینیم
-    2. logical lines => مفسر میبینه
 
-    - use `;` end the lines
-    - #PEP => راهنما برای تمیزی کد
+  1. physical lines => ما میبینیم
+  2. logical lines => مفسر میبینه
+
+  - use `;` end the lines
+  - #PEP => راهنما برای تمیزی کد
 
 ## S02-E02-py-comment-docstring
 
 - comment => # (number sign)
-    - کسی که کد های منو توسعه بده
+  - کسی که کد های منو توسعه بده
 - docstring => ابتدای یک تابع یا کلاس برای توضیح ان تابع یا کلاس
-    - کسی که از متد یا تابع من استفاده میکنه
+  - کسی که از متد یا تابع من استفاده میکنه
 
 ```py
 # this is a comment
@@ -143,7 +144,7 @@ print(name)
 ## S02-E05-py-variable
 
 - variable
-    - print variable address
+  - print variable address
 
 ```python
 a = 1
@@ -175,7 +176,7 @@ del m
 ## S02-E06-identifier
 
 - شناسه
-    - variable : `_` or `a-z` or `A-Z`
+  - variable : `_` or `a-z` or `A-Z`
 
 ```python
 # variable
@@ -183,11 +184,11 @@ a = 8
 A = "Ali"
 # شناسه خصوصی
 _a = 2.3
-#  شناسه خصوصی کلاس ها 
+#  شناسه خصوصی کلاس ها
 __a = 1
 
 
-# class 
+# class
 class MyClass:
     pass
 
@@ -203,8 +204,8 @@ print(print_doc.__doc__)
 ```
 
 - class name : is better to write PascalCase
-- function name :  is better to write small(or camelCase) and use_ between each word
-- variable name  : is better to write small
+- function name : is better to write small(or camelCase) and use\_ between each word
+- variable name : is better to write small
 - plugin : string manipulation
 
 ## S02-E07-keywords
@@ -214,7 +215,7 @@ import keyword
 
 help("keywords")
 
-# 
+#
 key = keyword.iskeyword("def")
 print(key)  # return True or False
 
@@ -268,7 +269,7 @@ print("//", z)
 - greater than : `>`
 - less than : `<`
 - greater than or equal to : `>=`
-- less than or equal to  : `<=`
+- less than or equal to : `<=`
 - return True Or False
 
 ## S02-E10-assignment-operators
@@ -288,6 +289,6 @@ print("//", z)
 - `>>=` : `x >>= 3` : `x = x >> 3`
 - `<<=` : `x <<= 3` : `x = x << 3`
 
-*** CODE IN PYTHON FILE 
+\*\*\* CODE IN PYTHON FILE
 
-
+##
