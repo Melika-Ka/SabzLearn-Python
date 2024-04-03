@@ -16,14 +16,14 @@
 - paradigm : الگو، شیوه و روش برنامه نویسی
 - یک زبان میتواند چندین پارادایم را پشتیبانی کند
 - paradigm
-  1. Imperative دستوری
-     - Procedual Programming برنامه نویسی پروسه ای
-     - Object Oriented Programing (OOP)برنامه نویسی شی گرا
-     - Parallel Processing رایانش موازی
-  2. Declarative
-     - Logical Programming برنامه نویسی منطقی
-     - Functional Programming برنامه نویسی تابعی
-     - Database Programming برنامه نویسی پایگاه داده
+    1. Imperative دستوری
+        - Procedual Programming برنامه نویسی پروسه ای
+        - Object Oriented Programing (OOP)برنامه نویسی شی گرا
+        - Parallel Processing رایانش موازی
+    2. Declarative
+        - Logical Programming برنامه نویسی منطقی
+        - Functional Programming برنامه نویسی تابعی
+        - Database Programming برنامه نویسی پایگاه داده
 
 ## S00-E10-py-what-is-python
 
@@ -92,18 +92,18 @@
 - syntax : how to code
 - rows
 
-  1. physical lines => ما میبینیم
-  2. logical lines => مفسر میبینه
+    1. physical lines => ما میبینیم
+    2. logical lines => مفسر میبینه
 
-  - use `;` end the lines
-  - #PEP => راهنما برای تمیزی کد
+    - use `;` end the lines
+    - #PEP => راهنما برای تمیزی کد
 
 ## S02-E02-py-comment-docstring
 
 - comment => # (number sign)
-  - کسی که کد های منو توسعه بده
+    - کسی که کد های منو توسعه بده
 - docstring => ابتدای یک تابع یا کلاس برای توضیح ان تابع یا کلاس
-  - کسی که از متد یا تابع من استفاده میکنه
+    - کسی که از متد یا تابع من استفاده میکنه
 
 ```py
 # this is a comment
@@ -144,7 +144,7 @@ print(name)
 ## S02-E05-py-variable
 
 - variable
-  - print variable address
+    - print variable address
 
 ```python
 a = 1
@@ -176,7 +176,7 @@ del m
 ## S02-E06-identifier
 
 - شناسه
-  - variable : `_` or `a-z` or `A-Z`
+    - variable : `_` or `a-z` or `A-Z`
 
 ```python
 # variable
@@ -291,4 +291,17 @@ print("//", z)
 
 \*\*\* CODE IN PYTHON FILE
 
-## S02-E11
+## S02-E11-logical-operators
+
+- and : returns true if both statements are true
+- or :  returns false if both statements are false
+- not : reverse thr result
+
+```python
+x = 5
+y = 3
+print(x < 4 or y < 4)  # return True
+print(x < 4 and y < 4)  # return False
+print(not (x < 6))  # returns False
+print(not False)
+```
