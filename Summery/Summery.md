@@ -305,3 +305,17 @@ print(x < 4 and y < 4)  # return False
 print(not (x < 6))  # returns False
 print(not False)
 ```
+
+## S02-E12-membership-operators
+
+- in
+- not in
+
+```python
+# x in y   => y میتواند رشته باشد یا ارایه باشد 
+s = "Melika karimi"
+print("m" in s)  # returns True
+print("m" not in s)  # returns False
+my_list = [1, 2, 3, 4]
+print(5 in my_list)  # returns False
+```
