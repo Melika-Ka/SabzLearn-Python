@@ -319,3 +319,33 @@ print("m" not in s)  # returns False
 my_list = [1, 2, 3, 4]
 print(5 in my_list)  # returns False
 ```
+
+## S02-E13-identity-operators
+
+- identity-operators => عملگر های هویت
+- is : returns true if both variable are the same object
+    - باید خانه حافظه یکسان داشته باشند
+- is not : returns true if both variable are not the same object
+
+```python
+x = 5
+y = 5
+z = 4
+print(x is y)  # returns True
+print(x is not z)  # returns True
+
+# list 
+a = [1, 2, 3]
+b = [1, 2, 3]
+print("a==b ? : ", a == b)  # returns True 
+print("a is b : ", a is b)  # returns False
+print("id(a) : ", id(a))
+print("id(b) : ", id(b))
+
+# 
+c = a
+print("id(c) : ", id(c))
+print("a==c ? : ", a == c)  # returns True
+print("a is c ? : ", a is c)  # returns True
+
+```

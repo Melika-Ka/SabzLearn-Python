@@ -1,6 +1,11 @@
 # part1
 a = 1
 print('a = 1 : ', id(a))
+x = a
+print("x= a : ", id(x))
+print('a=1 & x = a have same address')
+
+#
 a = 2
 print('a = 2 : ', id(a))
 b = 2
