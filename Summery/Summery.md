@@ -385,3 +385,9 @@ print(x := 3)  # it does work
     - دستورات مرکب چند بخشی : مثل شرط ها
     - میتوانند چیزی را هم تولید نکنند
     - از عبارت ها تولید میشود
+
+## S02-E18-class-method-attribute
+
+- object oriented programming => OOP
+
+## S02-E19-pep8-pep20
