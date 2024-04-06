@@ -391,3 +391,16 @@ print(x := 3)  # it does work
 - object oriented programming => OOP
 
 ## S02-E19-pep8-pep20
+
+- [peps](http://python.org/dev/peps)
+
+- [pep20](https://peps.python.org/pep-0020/)
+    - [pep20_by_example.py](https://gist.github.com/evandrix/2030615)
+
+```python
+import this  # ctrl + b
+```
+
+- [pep8](https://peps.python.org/pep-0008/)
+    - [pep8_persin](https://pep8.ir/)
+
