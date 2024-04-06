@@ -368,6 +368,20 @@ print(x)
 
 ## S02-E15-walrus
 
+```python
+x = 2
+# print(x=3)  # it does not work
+print(x := 3)  # it does work
+```
+
 ## S02-E16-operator-precedence
 
 ## S02-E17-expressions-and-statements
+
+- expressions : تولید یک مقدار و قابل ارزیابی
+- statement :  دستوری : انجام یک دستور
+    - دستورات ساده : x = 7
+    - دستورات مرکب یک بخشی: مثل توابع
+    - دستورات مرکب چند بخشی : مثل شرط ها
+    - میتوانند چیزی را هم تولید نکنند
+    - از عبارت ها تولید میشود
