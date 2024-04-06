@@ -289,7 +289,7 @@ print("//", z)
 - `>>=` : `x >>= 3` : `x = x >> 3`
 - `<<=` : `x <<= 3` : `x = x << 3`
 
-\*\*\* CODE IN PYTHON FILE
+*** CODE IN PYTHON FILE
 
 ## S02-E11-logical-operators
 
@@ -349,3 +349,25 @@ print("a==c ? : ", a == c)  # returns True
 print("a is c ? : ", a is c)  # returns True
 
 ```
+
+## S02-E14-bitwise-operators
+
+- `&` : And => set each bit to 1 if both bits are 1
+- `|` : Or => set each bit to 1 if one of two bits is 1
+- `^` : Xor => set each bit to 1 if only one of two bits is 1
+- `~` : Not => invert all the bits
+- `<<` : Zero fill left shift
+- `>>` : signed right shift
+
+```python
+x = 0b10101
+print(x)
+```
+
+*** CODE IN PYTHON FILE
+
+## S02-E15-walrus
+
+## S02-E16-operator-precedence
+
+## S02-E17-expressions-and-statements
