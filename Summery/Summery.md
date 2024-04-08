@@ -404,3 +404,29 @@ import this  # ctrl + b
 - [pep8](https://peps.python.org/pep-0008/)
     - [pep8_persin](https://pep8.ir/)
 
+# S03
+
+## S03-E01-data-types
+
+python data type :
+
+- numeric
+    - integer
+    - float
+    - complex
+- dictionary
+- boolean
+- set
+- sequence type
+    - string
+    - list
+    - tuple
+- special
+
+## S03-E02-numbers
+
+## S03-E03-example-for-numbers
+
+## S03-E04-exercises-season3-numbers
+
+## S03-E05-string-part1
