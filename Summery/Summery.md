@@ -312,7 +312,7 @@ print(not False)
 - not in
 
 ```python
-# x in y   => y میتواند رشته باشد یا ارایه باشد 
+# x in y => y میتواند رشته باشد یا ارایه باشد 
 s = "Melika karimi"
 print("m" in s)  # returns True
 print("m" not in s)  # returns False
@@ -379,7 +379,7 @@ print(x := 3)  # it does work
 ## S02-E17-expressions-and-statements
 
 - expressions : تولید یک مقدار و قابل ارزیابی
-- statement :  دستوری : انجام یک دستور
+- statement : دستوری : انجام یک دستور
     - دستورات ساده : x = 7
     - دستورات مرکب یک بخشی: مثل توابع
     - دستورات مرکب چند بخشی : مثل شرط ها
@@ -425,8 +425,33 @@ python data type :
 
 ## S03-E02-numbers
 
+- integer
+- float
+- complex
+
+- casting => تبدیل واحد بزرگ تر به کوچک تر
+
+*** CODE IN PYTHON FILE
+
 ## S03-E03-example-for-numbers
+
+*** CODE IN PYTHON FILE
 
 ## S03-E04-exercises-season3-numbers
 
+*** CODE IN PYTHON FILE
+
 ## S03-E05-string-part1
+
+- `isinstance(variable, datatype)` => نمونه ای از یک دیتا تایپ خاصی هست یا خیر
+- `type(variable)`
+- `\n` => رفتن به خط بعدی
+- `\` or r => لغو کاری
+- `*` or duplicate => تکرار
+- `+` or contact => چسباندن بهم
+
+## S03-E06-string-part2
+
+- index
+- slice
+- len => سایز رشته
