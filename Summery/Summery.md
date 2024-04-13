@@ -512,6 +512,12 @@ python data type :
 
 ## S03-E11-f-string
 
+- f string => python 3.6
+- module : `import datetime`
+    - [datetime in python documents](https://docs.python.org/3/library/datetime.html)
+
+> CODE IN PYTHON FILE
+
 ## S03-E12-example-for-string
 
 ## S03-E13-exercises-season3-strings
