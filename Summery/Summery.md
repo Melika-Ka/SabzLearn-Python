@@ -289,7 +289,7 @@ print("//", z)
 - `>>=` : `x >>= 3` : `x = x >> 3`
 - `<<=` : `x <<= 3` : `x = x << 3`
 
-*** CODE IN PYTHON FILE
+> CODE IN PYTHON FILE
 
 ## S02-E11-logical-operators
 
@@ -364,7 +364,7 @@ x = 0b10101
 print(x)
 ```
 
-*** CODE IN PYTHON FILE
+> CODE IN PYTHON FILE
 
 ## S02-E15-walrus
 
@@ -431,15 +431,15 @@ python data type :
 
 - casting => تبدیل واحد بزرگ تر به کوچک تر
 
-*** CODE IN PYTHON FILE
+> CODE IN PYTHON FILE
 
 ## S03-E03-example-for-numbers
 
-*** CODE IN PYTHON FILE
+> CODE IN PYTHON FILE
 
 ## S03-E04-exercises-season3-numbers
 
-*** CODE IN PYTHON FILE
+> CODE IN PYTHON FILE
 
 ## S03-E05-string-part1
 
@@ -455,3 +455,63 @@ python data type :
 - index
 - slice
 - len => سایز رشته
+
+## S03-E07-string-methods
+
+- function : `fync_name(string_varible)` => like :`len()`
+- method : `string_variable.method_name()` => like :`upper()`
+
+1. `len()` : سایز رشته
+2. `.upper()` => تبدیل حروف رشته به حروف بزرگ
+3. `.lower()` => تبدیل حروف رشته به حرف کوچک
+4. `.count()` => شمارش یک یا چند حرف خاص در یک رشته
+5. `.endswith()` => ایا رشته من با کاراکتر خاصی پایان یافته است یا نه
+6. `.startswith()`
+7. `.find()` => پیدا کردن یک کاراکتر خاص در رشته از سمت چپ
+8. `.rfind()` => پیدا کردن یک کاراکتر خاص در رشته از سمت راست
+9. `.isalnum()` => ایا تمام این کاراکتر ها از حرف و عدد هستند یا خیر
+10. `.isnumeric()` => فقط و فقط از ارقام است یا نه
+11. `.join()` => چسباندن یک لیست شامل
+12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست
+13. `.replace("old","new")` => جایگذاری کارکتری با یک کاراکتر دیگر
+14. `.strip()` => حذف تعدادی کاراکتر از اول یا اخر رشته
+15. `.rstrip()` => حذف تعدادی کاراکتر از سمت راست رشته
+16. `.lstrip()` => حذف تعدادی کاراکتر از سمت چپ رشته
+17. `.capitalize()` => اولین کاکراکتر را حتبدیل به حرف بزرگ میکند
+
+> CODE IN PYTHON FILE
+
+## S03-E08-unicode-escape-characters
+
+- start with `\`
+- [ascii](https://www.asciitable.com/)
+- [unicode](https://www.utf8-chartable.de/)
+
+- `ord()` => پیدا کردن یونیکد یک رشته یا حرف یا کاراکتر
+- `char()` => پیدا کردن حروف یا کاراکتر یک یونیکد
+- `\b` => حذف کردن یک کاراکتر قبلی
+- `\r` => کاراکتر های بعدی را وارد خط اول میکند
+- `\t` => فاصله یک تب
+
+## S03-E09-traditional-string-format
+
+- `"%[(key)][flag][w][.p] type" %(مقدار یا متغیر )`
+
+> CODE IN PYTHON FILE
+
+## S03-E10-string-format-with-format
+
+- [pythons document](https://docs.python.org/3/library/string.html)
+- `.format()`
+
+    - `"{" [field_name] ["!"conversion] [":"format_spec] "}"`
+
+        - `:[[fill]align][sign][#][0][width][grouping-option][.precision][type]`
+
+> CODE IN PYTHON FILE
+
+## S03-E11-f-string
+
+## S03-E12-example-for-string
+
+## S03-E13-exercises-season3-strings
