@@ -443,6 +443,8 @@ python data type :
 
 ## S03-E05-string-part1
 
+- strings in Python are arrays of bytes representing unicode characters.
+- You can assign a multiline string to a variable by using three quotes Or three single quotes
 - `isinstance(variable, datatype)` => نمونه ای از یک دیتا تایپ خاصی هست یا خیر
 - `type(variable)`
 - `\n` => رفتن به خط بعدی
@@ -455,29 +457,43 @@ python data type :
 - index
 - slice
 - len => سایز رشته
+- Looping Through a String :
+
+```python
+for x in "banana":
+    print(x)
+```
 
 ## S03-E07-string-methods
 
+- [string methods](https://www.w3schools.com/python/python_ref_string.asp)
 - function : `fync_name(string_varible)` => like :`len()`
 - method : `string_variable.method_name()` => like :`upper()`
 
 1. `len()` : سایز رشته
-2. `.upper()` => تبدیل حروف رشته به حروف بزرگ
-3. `.lower()` => تبدیل حروف رشته به حرف کوچک
+2. `.upper()` => تبدیل حروف رشته به حروف بزرگ (returns the string in upper case)
+3. `.lower()` => تبدیل حروف رشته به حرف کوچک (returns the string in lower case)
+    - `casefold()` => This method is similar to the `lower()` method, but the `casefold()` method is stronger, more
+      aggressive, meaning that it will convert more characters into lower case, and will find more matches when
+      comparing two strings and both are converted using the `casefold()` method.
 4. `.count()` => شمارش یک یا چند حرف خاص در یک رشته
-5. `.endswith()` => ایا رشته من با کاراکتر خاصی پایان یافته است یا نه
-6. `.startswith()`
+5. `.endswith()` => ایا رشته من با کاراکتر خاصی پایان یافته است یا نه(Returns true if the string ends with the specified
+   value)
+6. `.startswith()` => (Returns true if the string starts with the specified value)
 7. `.find()` => پیدا کردن یک کاراکتر خاص در رشته از سمت چپ
 8. `.rfind()` => پیدا کردن یک کاراکتر خاص در رشته از سمت راست
 9. `.isalnum()` => ایا تمام این کاراکتر ها از حرف و عدد هستند یا خیر
-10. `.isnumeric()` => فقط و فقط از ارقام است یا نه
-11. `.join()` => چسباندن یک لیست شامل
-12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست
-13. `.replace("old","new")` => جایگذاری کارکتری با یک کاراکتر دیگر
-14. `.strip()` => حذف تعدادی کاراکتر از اول یا اخر رشته
+10. `.isnumeric()` => فقط و فقط از ارقام است یا نه (    Returns True if all characters in the string are numeric)
+11. `.join()` => چسباندن یک لیست شامل (Joins the elements of an iterable to the end of the string)
+12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست (returns a list where the text
+    between the specified separator becomes the list items)
+13. `.replace("old","new")` => جایگذاری کارکتری با یک کاراکتر دیگر (replaces a string with another string)
+14. `.strip()` => حذف تعدادی کاراکتر از اول یا اخر رشته (removes any whitespace from the beginning or the end)
 15. `.rstrip()` => حذف تعدادی کاراکتر از سمت راست رشته
 16. `.lstrip()` => حذف تعدادی کاراکتر از سمت چپ رشته
 17. `.capitalize()` => اولین کاکراکتر را حتبدیل به حرف بزرگ میکند
+18. `in` => To check if a certain phrase or character is present in a string
+19. `not in` => To check if a certain phrase or character is NOT present in a string
 
 > CODE IN PYTHON FILE
 
@@ -487,6 +503,7 @@ python data type :
 - [ascii](https://www.asciitable.com/)
 - [unicode](https://www.utf8-chartable.de/)
 
+- [strings_escape](https://www.w3schools.com/python/python_strings_escape.asp)
 - `ord()` => پیدا کردن یونیکد یک رشته یا حرف یا کاراکتر
 - `char()` => پیدا کردن حروف یا کاراکتر یک یونیکد
 - `\b` => حذف کردن یک کاراکتر قبلی
@@ -494,6 +511,8 @@ python data type :
 - `\t` => فاصله یک تب
 
 ## S03-E09-traditional-string-format
+
+- [string_formatting](https://www.w3schools.com/python/python_string_formatting.asp)
 
 - `"%[(key)][flag][w][.p] type" %(مقدار یا متغیر )`
 
@@ -521,3 +540,5 @@ python data type :
 ## S03-E12-example-for-string
 
 ## S03-E13-exercises-season3-strings
+
+- `.isdecimal()` = `.isdigit()` = `.isnumeric()`
