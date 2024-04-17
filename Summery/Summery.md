@@ -609,3 +609,12 @@ for x in "banana":
 <li><code>list_name.clear()</code> => empties the list</li>
 </ul>
 </details>
+
+## S03-E17-tuple
+
+- like list but tuple are immutable(we cant change them)
+- how to write :
+    - ()
+    - معمولا دارای نوع های متفاوت دارند
+
+## S03-E18-dict-part1 && S03-E19-dict-part2
