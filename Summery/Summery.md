@@ -577,9 +577,9 @@ for x in "banana":
 
 - copy in python :
     - shallow copy => ارجاع مشترک
-        - module : `list-name.copy()`
+        - module : `list-name.copy.copy()`
     - deap copy => ارجاع مشترک ندارد
-        - module : `deapcopy()`
+        - module : `deapcopy.copy()`
 
 ---
 
@@ -618,3 +618,47 @@ for x in "banana":
     - معمولا دارای نوع های متفاوت دارند
 
 ## S03-E18-dict-part1 && S03-E19-dict-part2
+
+- how to write dict :
+    - `{"key" : value}`
+        - key => هر نوع داده ای که غیر قابل تغییر باشد مثل عدد و استرینگ و تاپل ولی نمیتواند
+          لیستی باشد
+            - دیکشنری ها خود نمیتوانند به جای کلید باشند
+        - value => هرچیزی میتواند باشد
+    - نباید کلید های یکسان داشته باشیم
+    - ترتیب مهم نیس
+
+---
+
+- methods :
+    - جمع و تفریق ساپورت نمیشود
+    - `dic_name.get(key_name)`
+    - `dic_name.keys()`
+    - `dic_name.values()`
+    - `dic_name.items()`
+    - `len(dic_name)`
+    - `in`
+    - `is`
+    - how to delete :
+        - `del dic_name[key_name]`
+    - `sorted(varable_name)`
+    - تبدیل به دیکشنری
+        - باید داده ما کلید مقدار باشد
+        - `dict([(key,value),(key,valu)])`
+    - `zip(list_name_1 , list_name_2)`
+    - `list(zip(...))` => for show
+
+---
+
+- dictionary name :
+    - mapping
+    - نگاشت
+
+ ---
+
+- copy in python :
+    - shallow copy => ارجاع مشترک
+        - module : `dic-name.copy.copy()`
+    - deap copy => ارجاع مشترک ندارد
+        - module : `dic_name.copy.deepcopy()`
+
