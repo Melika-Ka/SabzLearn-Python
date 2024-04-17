@@ -473,22 +473,29 @@ for x in "banana":
 1. `len()` : سایز رشته
 2. `.upper()` => تبدیل حروف رشته به حروف بزرگ (returns the string in upper case)
 3. `.lower()` => تبدیل حروف رشته به حرف کوچک (returns the string in lower case)
-    - `casefold()` => This method is similar to the `lower()` method, but the `casefold()` method is stronger, more
-      aggressive, meaning that it will convert more characters into lower case, and will find more matches when
+    - `casefold()` => This method is similar to the `lower()` method, but the `casefold()` method is
+      stronger, more
+      aggressive, meaning that it will convert more characters into lower case, and will find more
+      matches when
       comparing two strings and both are converted using the `casefold()` method.
 4. `.count()` => شمارش یک یا چند حرف خاص در یک رشته
-5. `.endswith()` => ایا رشته من با کاراکتر خاصی پایان یافته است یا نه(Returns true if the string ends with the specified
+5. `.endswith()` => ایا رشته من با کاراکتر خاصی پایان یافته است یا نه(Returns true if the string
+   ends with the specified
    value)
 6. `.startswith()` => (Returns true if the string starts with the specified value)
 7. `.find()` => پیدا کردن یک کاراکتر خاص در رشته از سمت چپ
 8. `.rfind()` => پیدا کردن یک کاراکتر خاص در رشته از سمت راست
 9. `.isalnum()` => ایا تمام این کاراکتر ها از حرف و عدد هستند یا خیر
-10. `.isnumeric()` => فقط و فقط از ارقام است یا نه (    Returns True if all characters in the string are numeric)
+10. `.isnumeric()` => فقط و فقط از ارقام است یا نه (    Returns True if all characters in the string
+    are numeric)
 11. `.join()` => چسباندن یک لیست شامل (Joins the elements of an iterable to the end of the string)
-12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست (returns a list where the text
+12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست (returns a list
+    where the text
     between the specified separator becomes the list items)
-13. `.replace("old","new")` => جایگذاری کارکتری با یک کاراکتر دیگر (replaces a string with another string)
-14. `.strip()` => حذف تعدادی کاراکتر از اول یا اخر رشته (removes any whitespace from the beginning or the end)
+13. `.replace("old","new")` => جایگذاری کارکتری با یک کاراکتر دیگر (replaces a string with another
+    string)
+14. `.strip()` => حذف تعدادی کاراکتر از اول یا اخر رشته (removes any whitespace from the beginning
+    or the end)
 15. `.rstrip()` => حذف تعدادی کاراکتر از سمت راست رشته
 16. `.lstrip()` => حذف تعدادی کاراکتر از سمت چپ رشته
 17. `.capitalize()` => اولین کاکراکتر را حتبدیل به حرف بزرگ میکند
@@ -542,3 +549,63 @@ for x in "banana":
 ## S03-E13-exercises-season3-strings
 
 - `.isdecimal()` = `.isdigit()` = `.isnumeric()`
+
+## S03-E14-list-part1 && S03-E15-list-part2 && S03-E16-list-part3
+
+- [list](https://www.w3schools.com/python/python_lists.asp)
+- List :
+    - Lists are used to store multiple items in a single variable.
+    - Lists are one of 4 built-in data types in Python used to store collections of data, the other
+      3 are Tuple, Set,
+      and Dictionary, all with different qualities and usage.
+- List Items :
+    - List items are:
+        1. ordered : the items have a defined order, and that order will not change.
+        2. changeable/mutable : we can change, add, and remove items in a list after it has been
+           created. # immutable like str
+        3. allow duplicate values : lists can have items with the same value.
+- List items can be of any data type
+
+---
+
+- how to make a list :
+    - `[]`
+    - `list()` => لیست کردن یک عبارت
+    - `.split()`
+
+---
+
+- copy in python :
+    - shallow copy => ارجاع مشترک
+        - module : `list-name.copy()`
+    - deap copy => ارجاع مشترک ندارد
+        - module : `deapcopy()`
+
+---
+
+- these are also use in Array :
+    - `in`
+    - `on in`
+    - `==`
+
+<details>
+<summary>Add List Items</summary>
+<ul>
+<li><code>insert()</code> => inserts an item at the specified index</li>
+<li><code>list_name.append(new_item)</code> => append an item</li>
+<li><code>first_list.extend(second_list)</code> => To append elements from another list to the current list</li>
+</ul>
+</details>
+<br>
+<details>
+<summary>Remove List Items</summary>
+<ul>
+<li><code>del list_name(list_item)</code> => removes the specified index<ul><li>The del keyword can also delete the list completely.</li></li> </ul>
+</li>
+<li><code>list_name.remove(list_item)</code> => removes the specified item</li>
+<li><code>list_name.pop(item_index)</code> => removes the specified index
+<ul><li>If you do not specify the index, the pop() method removes the last item.</li></ul>
+</li>
+<li><code>list_name.clear()</code> => empties the list</li>
+</ul>
+</details>

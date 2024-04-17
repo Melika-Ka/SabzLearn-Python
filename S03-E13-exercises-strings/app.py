@@ -12,5 +12,3 @@
 # print(user_num.isnumeric())
 # print(user_num.isdigit())
 # print(user_num.isdecimal())
-#
-print("SGDGF\rbccvnbn")
