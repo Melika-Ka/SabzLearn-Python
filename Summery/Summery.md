@@ -693,7 +693,7 @@ print(t)
         - زمانی که ایتم مورد نظر وجود نداشته باشد خطا میدهد
     - `set_name.discard(item)`
         - اگر ایتم مورد نظر وجود نداشته باشد خطا نمیدهد
-    - `len(set_name)` 
+    - `len(set_name)`
     - `set_name1.difference(set_name2)` == `set_name1 - set_name2`
     - `set_name1.union(set_name2)` == `set_name1 | set_name2`
     - `set_name1.intersection(set_name2)` == `set_name1 & set_name2`
@@ -704,3 +704,33 @@ print(t)
 ## S03-E24-None-bool
 
 ## S03-E25-and-or-with-datatypes
+
+# S04
+
+## S04-E01-Multiple-inputs-in-a-line
+
+> CODE IN PYTHON FILE
+
+## S04-E02-E03-decision
+
+- فقط یدونه else میتوانیم استفاده کنیم
+- میتوان چند مورد elif را نوشت
+- elif باید بعد از if باشد
+
+```python
+condition = "?"
+if condition:
+    print("success code")
+elif condition:
+    print("elif code")
+else:
+    print("fail code")
+```
+
+- اگر شرط در خط اول درست بود خط های بعدی را چک نمیکند
+
+## S04-E05-python-sum-min-max
+
+- `min([num1 ,num2 , ..], defualt = default_number)`
+- `max([num1 ,num2 , ..], defualt = default_number)`
+- `sum([num1 ,num2 , ..], start =0)`
