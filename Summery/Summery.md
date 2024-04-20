@@ -617,6 +617,15 @@ for x in "banana":
     - ()
     - معمولا دارای نوع های متفاوت دارند
 
+```python
+t = (1, 2)
+print(id(t))  # 1
+t += (5,)
+print(id(t))  # 2
+print(t)
+# 1 & 2 have different id 
+```
+
 ## S03-E18-dict-part1 && S03-E19-dict-part2
 
 - how to write dict :
@@ -662,3 +671,36 @@ for x in "banana":
     - deap copy => ارجاع مشترک ندارد
         - module : `dic_name.copy.deepcopy()`
 
+## S03-E20-set-part1 && S03-E20-set-part1
+
+- set : یک سرس اشیا که دارای ویژگی های مشترک هستند
+- مثل همان مجموعه ها در ریاضی
+- قابل تغییر هستند
+- عناصر تکراری قبول نمیکنند
+- ترتیب خاصی ندارند
+- ممکن ترتیب در نشان دادن ها متفاوت شود
+- نمیتوانیم از ست ها در کلید دیکشنری ها استفاده کنیم چون قابل تغییر هستند ولی کلید دیکشنری نباید
+  تغییر کند
+- درون مجموعه نمیتوان مقدار قابل تغییر استفاده کنیم مثل ارایه
+
+---
+
+- methods:
+    - `set_name.add(item)`
+    - `set_name.update([item1,item2,..])`
+    - `set()` => empty set
+    - `set_name.remove(item)`
+        - زمانی که ایتم مورد نظر وجود نداشته باشد خطا میدهد
+    - `set_name.discard(item)`
+        - اگر ایتم مورد نظر وجود نداشته باشد خطا نمیدهد
+    - `len(set_name)` 
+    - `set_name1.difference(set_name2)` == `set_name1 - set_name2`
+    - `set_name1.union(set_name2)` == `set_name1 | set_name2`
+    - `set_name1.intersection(set_name2)` == `set_name1 & set_name2`
+    - `set_name1.symmetric_difference(set_name2)` == `set_name1 ^ set_name2`
+    - `set_name1.issuperset(set_name2)` == `set_name1 > set_name2`
+    - `set_name1.issubset(set_name2)` == `set_name1 < set_name2`
+
+## S03-E24-None-bool
+
+## S03-E25-and-or-with-datatypes
