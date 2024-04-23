@@ -734,3 +734,102 @@ else:
 - `min([num1 ,num2 , ..], defualt = default_number)`
 - `max([num1 ,num2 , ..], defualt = default_number)`
 - `sum([num1 ,num2 , ..], start =0)`
+
+# S05
+
+## S05-E01-while
+
+```python
+condition = 0
+while condition:
+    print("while code")
+```
+
+## S05-E03-break-continue-else
+
+- break => از حلثه خارج میشود
+
+```python
+condition = 0
+condition_2 = "sth"
+while condition:
+    print("while code")
+    if condition_2:
+        break
+```
+
+- continue
+
+```python
+condition = 0
+condition_2 = "sth"
+while condition:
+    print("while code")
+    if condition_2:
+        continue
+```
+
+- else : بریک و خطایی اتفاق نیوفته و حلقه به صورت نرمال اتمام شود
+
+```python
+condition = 0
+condition_2 = "sth"
+while condition:
+    print("while code")
+    if condition_2:
+        continue
+else:
+    print("Ok")
+```
+
+## S05-E04-nested-loop
+
+```python
+condition = 0
+condition_2 = 0
+while condition:
+    print("while 1 code")
+    while condition_2:
+        print("while 2 code")
+
+```
+
+## S05-E05-for-loop
+
+- برای توالیا خیلی بهتر است
+
+```python
+obj = [1, 2, 3]
+for target in obj:
+    print(target)
+```
+
+- also break and continue and else use in for loop
+
+```python
+obj_1 = [1, 2, 3]
+obj_2 = [4, 5, 6]
+for target_1 in obj_1:
+    for target_2 in obj_2:
+        print(target_2)
+    print(target_1)
+```
+
+## S05-E06-range
+
+- مشخص کردن یک بازه
+- مشخص کردن گام
+
+```python
+type(range(10))  # range
+range(10)  # از صفر تا ده برو
+```
+
+## S05-E07-for-tips
+
+- `enumerate([1,2,3])`
+- `zip(list_1 , list_2)`
+- `reversed(list)`
+- `sorted()`
+
+## S05-E08-random
