@@ -833,3 +833,22 @@ range(10)  # از صفر تا ده برو
 - `sorted()`
 
 ## S05-E08-random
+
+```python
+from random import random, seed, uniform, randint, randrange, choice, sample, shuffle
+# use methods
+```
+
+- `random()` => بازه صفر و یک
+- `randint(min ,max)` =>
+- `seed(number)` =>عدد تصادفی ب حسب عدد وارد شده
+- `(min + (random()*(max -min)))`
+- `uniform(min ,max)`
+- `randrange(min , max , phy)`
+- `choice(list_name)`
+- `sample(list_name , count)`
+- `shuffle(list_name)` => change the list
+- `variable.copy()`
+- numpy = random => for machine learning
+
+## S05-E10-miniproject-encrypt-decrypt
