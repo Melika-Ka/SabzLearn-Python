@@ -851,4 +851,28 @@ from random import random, seed, uniform, randint, randrange, choice, sample, sh
 - `variable.copy()`
 - numpy = random => for machine learning
 
-## S05-E10-miniproject-encrypt-decrypt
+## S05-E11-miniproject-password-generator
+
+```python
+import string
+
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+lower_upper = string.ascii_letters
+print(lower)
+print(upper)
+print(lower_upper)
+```
+
+## S05-E12-miniproject-timer
+
+```python
+import time
+from os import system, name
+# در پایچارم کار نمیکند 
+if name == "nt":
+    system("cls")
+else:
+    system("clear")
+time.sleep(1)  # وقفه انداختن در یک کد 
+```
