@@ -869,6 +869,7 @@ print(lower_upper)
 ```python
 import time
 from os import system, name
+
 # در پایچارم کار نمیکند 
 if name == "nt":
     system("cls")
@@ -876,3 +877,69 @@ else:
     system("clear")
 time.sleep(1)  # وقفه انداختن در یک کد 
 ```
+
+# S06
+
+## S06-E01-function
+
+- how to write function :
+
+```python
+def function_name(x):
+    return 2 * x + 1
+
+
+function_name(3)
+```
+
+## S06-E02-function-syntax
+
+- function name : small case and camelCase
+- `return None`
+
+```python
+def funct():
+    x = input("user input : ")
+    print(int(x) ** 3)
+    # return None #  default
+
+
+print(funct())  # print None
+```
+
+- بعد از ریترن کدی اجرا نمیشود
+
+```python
+def why():
+    x = input("user input : ")
+    return int(x) + 3
+    print("hi")  # اجرا نمیشود
+
+
+print(why())
+```
+
+- pass :
+
+```python
+def function():
+    pass
+```
+
+- rename function name :
+
+```python
+def cube(x):
+    return x ** 3
+
+
+n = cube
+print(n)
+print(cube)
+print(n(3))
+
+```
+
+- good coding book
+
+## S06-E03-example-function
