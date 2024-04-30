@@ -942,4 +942,99 @@ print(n(3))
 
 - good coding book
 
-## S06-E03-example-function
+## S06-E04-argument-syntax
+
+- one parameter == one arguments
+
+1. normal
+2. name = value
+3. normal + (name =value)
+4. *iterable => str , tuple , list , set , ...
+5. **dict
+
+```python
+## a ,b, c => parameters
+def maxing(a, b, c):
+    return max(a, b, c, )
+
+
+# 1,2,3 => arguments
+# normal
+print(maxing(1, 2, 3))
+# name = value
+print(maxing(b=4, c=2, a=3))
+# normal + (name =value)
+print(maxing(4, c=2, b=3))
+# *iterable
+print(maxing(*[1, 4, 7]))
+x = {10, 9, 7}
+print(maxing(*x))
+# **dict
+d = {"b": 4, "c": 11, "a": 56}
+print(maxing(**d))
+```
+
+## S06-E05-parameter-syntax
+
+1. normal
+2. default value
+3. normal + default value
+4. *name
+5. **dict
+
+```python
+# normal
+def func(a, b, c, d):
+    print("a : ", a)
+    print("b : ", b)
+    print("c : ", c)
+    print("d : ", d)
+
+
+func(3, 6, 9, 1)
+
+
+# default value
+def func(a=3, b=6, c=8, d=9):
+    print("a : ", a)
+    print("b : ", b)
+    print("c : ", c)
+    print("d : ", d)
+
+
+func()
+
+```
+
+## S06-E06-py-parameter
+
+- `*`
+- `/`
+
+## S06-E07-docstring
+
+- [docstring](https://pandas.pydata.org/docs/development/contributing_docstring.html)
+- docstring => نوشتن عملکرد تابع
+    1. اولین خط بعد از تعریف تابع
+    2. توصیف کوتاه
+    3. اختیاری است
+    4. `func_name.--doc--` => نشان دادن docstring
+    5. `help(func_name)` => نشان دادن docstring
+
+```python
+def maxing(a, b, c):
+    """"Max three numbers."""
+    return max(a, b, c)
+
+
+print(maxing(1, 2, 3))
+print(maxing.__doc__)
+print(help(maxing))
+#######
+print(max.__doc__)
+```
+
+## S06-E08-function-annotations
+- [annotation](https://www.javatpoint.com/function-annotations-in-python#:~:text=Function%20annotations%20are%20some%20random,party%20or%20external%20python%20libraries.)
+- mypy package
+- `function_name.__annotations__`
