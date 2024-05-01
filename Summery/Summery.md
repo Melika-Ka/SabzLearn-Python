@@ -1035,6 +1035,18 @@ print(max.__doc__)
 ```
 
 ## S06-E08-function-annotations
+
 - [annotation](https://www.javatpoint.com/function-annotations-in-python#:~:text=Function%20annotations%20are%20some%20random,party%20or%20external%20python%20libraries.)
 - mypy package
 - `function_name.__annotations__`
+
+## S06-E09-first-class-function
+
+1. Can be created at runtime
+2. Can be assigned to a variable
+3. Can be passed as argument to a function
+4. Can be return as result from a function
+5. Can have properties and methods
+
+> CODE IN PYTHON FILE
+- `functioName.__name`
