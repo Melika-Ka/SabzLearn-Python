@@ -1049,4 +1049,79 @@ print(max.__doc__)
 5. Can have properties and methods
 
 > CODE IN PYTHON FILE
+
 - `functioName.__name`
+
+## S06-E10-E11-namespace-scope-part1-part2
+
+![scopes](../assets/scopes-diagram.png)
+![namespace](../assets/python-namespace-3.png)
+
+```python
+# built-in
+import math
+
+pi = 30
+print(math.pi)
+print(dir(math))
+print(dir(__builtins__))
+x = 6
+
+globals()["y"] = 2
+
+
+def func():
+    pass;
+
+
+# global
+print(globals())
+print(locals())
+
+
+def func_1():
+    a = 2
+    b = 4
+    print(a, b)
+    print(locals())
+
+    def func_11():
+        a = 45
+        b = 65
+        print(locals())
+
+    func_11()
+
+
+def func_2():
+    a = 3
+    b = 6
+    print(a, b)
+    print(locals())
+
+
+func_1()
+func_2()
+```
+
+## S06-E12-pass-by-value-vs-pass-by-reference
+
+- mutable => تغییر شی به شرط که ایدی شی تغییر نکند
+    - list
+    - dic
+    - set
+- immutable => pass by value
+    - boolean
+    - number
+    - string
+    - tuple
+
+## S06-E13-exercises-season6-function
+
+1. تابعی بنویسید که کار تابع داخلی len را انجام دهد.
+2. تابعی بنویسید که کار تابع داخلی max یا min را انجام دهد
+3. تابعی بنویسید که کار تابع داخلی sum را انجام دهد
+4. تابعی بنویسید که که یک عدد به عنوان ورودی گرفته تشخیص دهد عدد مربع است یا خیر
+5. تابعی بنویسید که قیمت کاال و درصد تخفیف را گرفته و قیمت پس از تخفیف را محاسبه کند.
+6. تابعی بنویسید که یک کاراکتر را خوانده و مشخص کند کاراکتر یک رقم، حرف بزرگ، حرف کوچک و یا سایر
+   نماد ها است
