@@ -1125,3 +1125,20 @@ func_2()
 5. تابعی بنویسید که قیمت کاال و درصد تخفیف را گرفته و قیمت پس از تخفیف را محاسبه کند.
 6. تابعی بنویسید که یک کاراکتر را خوانده و مشخص کند کاراکتر یک رقم، حرف بزرگ، حرف کوچک و یا سایر
    نماد ها است
+
+## S06-E14-lambda
+
+- به صورت خودکار return دارد و ما نمینوسیسم
+- چند ورودی دارد اما بدنه ان یکی عبارت است
+- در بدنه while و for و ... نوشته نمیشود
+- built-in functions :
+    1. `map(function_name,list)`
+    2. `filter(function_name,list )`
+    3. `reduce(function_name,list)`
+        - `from functools import reduce`
+    4. `sorted(list , key=function_name )`
+```python
+
+x = lambda parameters1, parameters2: parameters1 ** parameters2
+print(x(2, 3))
+```
