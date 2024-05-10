@@ -1157,3 +1157,19 @@ print(x(2, 3))
    شروع می شود یا خیر.
 7. با استفاده از لامبدا برنامه ای بنویسید تا بررسی کند که آیا یک رشته داده شده عددی است یا خیر.
    )توجه داشته باشید که میخواهیم رشته های اعشاری همچون ”4.5“ هم تشخیص داده شوند.
+
+## S06-E16-iterator
+
+- Iterate => تکرار کردن
+- Iteration => تکرار : for , while
+- Iterable => قابل تکرار - تکرار پذیر
+- Iterator => تکرار کننده - تکرار گر
+    - conndtion for Iterator variable
+
+      1.`__next__`
+      2.`__iter__`
+
+- `from itertools import count`
+    - `print(dir(count))`
+
+## S06-E17-E18-decorator-part1-part2
