@@ -1164,7 +1164,7 @@ print(x(2, 3))
 - Iteration => تکرار : for , while
 - Iterable => قابل تکرار - تکرار پذیر
 - Iterator => تکرار کننده - تکرار گر
-    - conndtion for Iterator variable
+    - condtion for Iterator variable
 
       1.`__next__`
       2.`__iter__`
@@ -1173,3 +1173,22 @@ print(x(2, 3))
     - `print(dir(count))`
 
 ## S06-E17-E18-decorator-part1-part2
+
+- باید مفهوم first class را بلد باشیم
+    - توابع تودرتو
+    - ارسال تابع به عنوان آرگومان
+
+```python
+import functools
+
+
+def decorator(func):
+    @functools.wraps(func)
+    def decorator_wraps(*args, **kwargs):
+        # Do sth before
+        value = func(*args, **kwargs)
+        # Do sth after
+        return value
+
+    return decorator_wraps
+```
