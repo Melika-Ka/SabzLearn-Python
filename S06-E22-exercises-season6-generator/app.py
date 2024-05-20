@@ -91,3 +91,4 @@ def hyrum_gn():
 result = hyrum_gn()
 for _ in range(10):
     print(next(result))
+
