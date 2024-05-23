@@ -1227,3 +1227,20 @@ def decorator(func):
 - `hassattr(function_name, "attribute_name")`
 - `delattr(function_name, "attribute_name")`
 - `del function_name.attribute_name`
+
+## S06-E26-recursive-function
+
+```python
+stop_condition = ""
+
+
+def recursive():
+    # ...
+    if stop_condition:
+        # ...
+        return  # ...
+    recursive()
+
+
+recursive()
+```
