@@ -1206,13 +1206,24 @@ def decorator(func):
 3. ژنراتور ی بنوی سید که یک ل یست گرفته و جمع عناصر آن را برگرداند
 4. ژنراتور ی بنوی سید که یک رشته گرفته و معکوس آن را برگرداند.
 5. یک ژنراتور بی نهایت از اعداد زوج یا فرد بنوییسید
-6. ژنراتوری ایجاد کنید که در هر مرحله، خروجی های زیر را تولید 
-کند:
-بار اول : 1
-بار دوم: 2 2
-بار سوم: 3 3 3
-
+6. ژنراتوری ایجاد کنید که در هر مرحله، خروجی های زیر را تولید
+   کند:
+   بار اول : 1
+   بار دوم: 2 2
+   بار سوم: 3 3 3
 
 ## S06-E23-coroutine
-- coroutine : دستور العملی که خروجی ها به ورودی ها متصل میشود 
-- 
+
+- coroutine : دستور العملی که خروجی ها به ورودی ها متصل میشود
+
+## S06-E25-function-attributes
+
+- `dir(function_name)`
+- `function_name.__dict__`
+- `function_name.__doc__`
+- `function_name.__name__`
+- `setattr(function_name, "attrebute_name","attrebute_value")`
+- `getattr(function_name, "attribute_name")`
+- `hassattr(function_name, "attribute_name")`
+- `delattr(function_name, "attribute_name")`
+- `del function_name.attribute_name`
