@@ -1244,3 +1244,15 @@ def recursive():
 
 recursive()
 ```
+
+## S06-E28-recursive-decorator-generator
+
+```python
+
+
+import sys
+# limit of stack
+stack_limit_number = 10000  # sample
+print(sys.getrecursionlimit())
+print(sys.setrecursionlimit(stack_limit_number))
+```
