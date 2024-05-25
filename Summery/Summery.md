@@ -1256,3 +1256,6 @@ stack_limit_number = 10000  # sample
 print(sys.getrecursionlimit())
 print(sys.setrecursionlimit(stack_limit_number))
 ```
+
+## S06-E29-memoization
+- use dictionary
