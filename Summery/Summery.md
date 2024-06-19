@@ -1251,6 +1251,7 @@ recursive()
 
 
 import sys
+
 # limit of stack
 stack_limit_number = 10000  # sample
 print(sys.getrecursionlimit())
@@ -1258,4 +1259,32 @@ print(sys.setrecursionlimit(stack_limit_number))
 ```
 
 ## S06-E29-memoization
+
 - use dictionary
+
+# S07
+
+## S07-E01-number-methods
+
+- `divmod(number1 ,number2)`  => result = (number1 // number2 , number1 % number2)
+- `pow(number1 , number2 , number3 )` => result = (number1 ** number2 ) % number3
+- `round(number1 , number2)`
+- `abs(number)` => قدر مطلق
+- `dir(int)` => لیست متدهای عدد
+- `number.as_integer_ratio` => نسبت اعداد
+- `number.bit_count()` => تعداد بیت یک در دودویی عدد
+- `number.bit_length()` => تعداد بیت ها در دودویی عدد
+- `number.imag` => اعداد مختلط
+- `number.real`=> اعداد مختلط
+- `number.conjugate()` => اعداد مختلط
+- `number.denominator()` => فقط برای اعداد int => مخرج یک کسر را نشان میدهد
+- `number.numerator()` => صورت یک کسر را نشان میدهد
+- `number.to_bytes(array_length , byteorder="big or little" ,signed =True or False )` => تبدیل
+  عدد به باینری
+- `number.from_bytes(array_length , byteorder="big or little" ,signed =True or False )` => تبدیل
+  باینری به عدد
+- `dir(float)`
+- `float_number.fromhex()`
+- `float_number.in_integer()`
+
+## S07-E02-list-methods
