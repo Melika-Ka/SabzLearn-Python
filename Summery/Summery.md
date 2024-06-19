@@ -1288,3 +1288,18 @@ print(sys.setrecursionlimit(stack_limit_number))
 - `float_number.in_integer()`
 
 ## S07-E02-list-methods
+
+- `dir(list)`
+- `list.append(number)`
+- `list.clear`=> لیست خالی برمیگرداند
+- `list2 = list1.copy()`
+- `list.count(number)`
+- `list.extend(new_list)`
+- `list.index(number_in_list ,start_index ,end_index)`
+- `list.insert(index, new_item)`
+- `list.pop(index)`
+- `list.remove(item)`
+- `list.reverse()` => اعمال روی لیست
+- `reversed(list)` => عدم اعممال روی لیست
+- `list.sort(reversed=True or False , key =lambda  x : x%3)`
+- `del list`
