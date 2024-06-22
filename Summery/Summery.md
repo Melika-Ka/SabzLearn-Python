@@ -1319,3 +1319,18 @@ print(sys.setrecursionlimit(stack_limit_number))
     - `set_name.pop()`
 
 ## S07-E04-dict-methods
+
+- `dir(dict)`
+    - `dict_name.clear()`
+    - `dict_name.copy()`
+    - `dict.fromkeys(list or tuple of key_name , list or tuple of value_name))` => return new
+      dictionary
+    - `dict_name.get(item_key , 0)` => return 0 if item_key is not in dict_name
+    - `dict_name.items()`
+    - `dict_name.keys()`
+    - `dict_name.valuess()`
+    - `dict_name.pop(key , 0)` => return value
+    - `dict_name.popitem()`
+    - `dict_name.setdefault(key , defalut_value)` => return value if exists if not exist add key
+      with None value or default_value
+    - `dict_name.update(new_dict)`
