@@ -1303,3 +1303,19 @@ print(sys.setrecursionlimit(stack_limit_number))
 - `reversed(list)` => عدم اعممال روی لیست
 - `list.sort(reversed=True or False , key =lambda  x : x%3)`
 - `del list`
+
+## S07-E03-set-tuple-methods
+
+- `dir(tuple)`
+    - `set.count(set_item)`
+    - `set.index(set_item)`
+- `dir(set)`
+    - در ست تکراری ها حذف میشود مانند مجموعه هاست
+    - `set_name.clear()`
+    - `set_name.copy()` => تغییر ناپذیر کردن
+    - `set_name.add(new_item)`
+    - `set_name_1.difference_update(set_name_2)` => return null and change set_name_1
+    - `set_name_1.isdisjiont(set_name_2)` => بررسی عضو مشترک => return True or False
+    - `set_name.pop()`
+
+## S07-E04-dict-methods
