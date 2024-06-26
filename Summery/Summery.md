@@ -294,7 +294,7 @@ print("//", z)
 ## S02-E11-logical-operators
 
 - and : returns true if both statements are true
-- or :  returns false if both statements are false
+- or : returns false if both statements are false
 - not : reverse thr result
 
 ```python
@@ -312,7 +312,7 @@ print(not False)
 - not in
 
 ```python
-# x in y => y میتواند رشته باشد یا ارایه باشد 
+# x in y => y میتواند رشته باشد یا ارایه باشد
 s = "Melika karimi"
 print("m" in s)  # returns True
 print("m" not in s)  # returns False
@@ -334,15 +334,15 @@ z = 4
 print(x is y)  # returns True
 print(x is not z)  # returns True
 
-# list 
+# list
 a = [1, 2, 3]
 b = [1, 2, 3]
-print("a==b ? : ", a == b)  # returns True 
+print("a==b ? : ", a == b)  # returns True
 print("a is b : ", a is b)  # returns False
 print("id(a) : ", id(a))
 print("id(b) : ", id(b))
 
-# 
+#
 c = a
 print("id(c) : ", id(c))
 print("a==c ? : ", a == c)  # returns True
@@ -486,7 +486,7 @@ for x in "banana":
 7. `.find()` => پیدا کردن یک کاراکتر خاص در رشته از سمت چپ
 8. `.rfind()` => پیدا کردن یک کاراکتر خاص در رشته از سمت راست
 9. `.isalnum()` => ایا تمام این کاراکتر ها از حرف و عدد هستند یا خیر
-10. `.isnumeric()` => فقط و فقط از ارقام است یا نه (    Returns True if all characters in the string
+10. `.isnumeric()` => فقط و فقط از ارقام است یا نه ( Returns True if all characters in the string
     are numeric)
 11. `.join()` => چسباندن یک لیست شامل (Joins the elements of an iterable to the end of the string)
 12. `.split()` => جدا کردن رشته ها برحسب یک کارکتر خاص و قرار داند آنها در یک لیست (returns a list
@@ -623,7 +623,7 @@ print(id(t))  # 1
 t += (5,)
 print(id(t))  # 2
 print(t)
-# 1 & 2 have different id 
+# 1 & 2 have different id
 ```
 
 ## S03-E18-dict-part1 && S03-E19-dict-part2
@@ -660,10 +660,11 @@ print(t)
 ---
 
 - dictionary name :
+
     - mapping
     - نگاشت
 
- ---
+  ***
 
 - copy in python :
     - shallow copy => ارجاع مشترک
@@ -870,12 +871,12 @@ print(lower_upper)
 import time
 from os import system, name
 
-# در پایچارم کار نمیکند 
+# در پایچارم کار نمیکند
 if name == "nt":
     system("cls")
 else:
     system("clear")
-time.sleep(1)  # وقفه انداختن در یک کد 
+time.sleep(1)  # وقفه انداختن در یک کد
 ```
 
 # S06
@@ -949,8 +950,8 @@ print(n(3))
 1. normal
 2. name = value
 3. normal + (name =value)
-4. *iterable => str , tuple , list , set , ...
-5. **dict
+4. \*iterable => str , tuple , list , set , ...
+5. \*\*dict
 
 ```python
 ## a ,b, c => parameters
@@ -979,8 +980,8 @@ print(maxing(**d))
 1. normal
 2. default value
 3. normal + default value
-4. *name
-5. **dict
+4. \*name
+5. \*\*dict
 
 ```python
 # normal
@@ -1164,10 +1165,10 @@ print(x(2, 3))
 - Iteration => تکرار : for , while
 - Iterable => قابل تکرار - تکرار پذیر
 - Iterator => تکرار کننده - تکرار گر
+
     - condtion for Iterator variable
 
-      1.`__next__`
-      2.`__iter__`
+      1.`__next__` 2.`__iter__`
 
 - `from itertools import count`
     - `print(dir(count))`
@@ -1266,8 +1267,8 @@ print(sys.setrecursionlimit(stack_limit_number))
 
 ## S07-E01-number-methods
 
-- `divmod(number1 ,number2)`  => result = (number1 // number2 , number1 % number2)
-- `pow(number1 , number2 , number3 )` => result = (number1 ** number2 ) % number3
+- `divmod(number1 ,number2)` => result = (number1 // number2 , number1 % number2)
+- `pow(number1 , number2 , number3 )` => result = (number1 \*\* number2 ) % number3
 - `round(number1 , number2)`
 - `abs(number)` => قدر مطلق
 - `dir(int)` => لیست متدهای عدد
@@ -1334,3 +1335,50 @@ print(sys.setrecursionlimit(stack_limit_number))
     - `dict_name.setdefault(key , defalut_value)` => return value if exists if not exist add key
       with None value or default_value
     - `dict_name.update(new_dict)`
+
+## S07-E05-working-with-walrus-operator
+
+- use warlus with Parentheses in if ,while
+- use warlus with Parentheses in 0 tab
+- use warlus with Parentheses in 0 tab with other variable
+- use warlus with Parentheses in function
+- use warlus with Parentheses when we call function
+
+```python
+# 
+(x := 5)
+# 
+x = (z := 5) + 1
+
+
+# 
+def func(c=(x := 5)):
+    print(c ** 2)
+
+
+# 
+func(c=(f := 8))
+print(f)
+print(x)
+
+
+# 
+def function2(x: (z := 5) = 6):
+    print(x ** 2)
+
+
+function2()
+
+# 
+f = lambda x: (c := print(x ** 2))
+(f := lambda x: print(x ** 2))
+
+f(5)
+
+# 
+s = "reza"
+print(f"{s}")
+print(f"{s:=5}")
+print(f"{(s:=5)}")
+
+```
