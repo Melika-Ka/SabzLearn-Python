@@ -1379,6 +1379,25 @@ f(5)
 s = "reza"
 print(f"{s}")
 print(f"{s:=5}")
-print(f"{(s:=5)}")
+print(f"{(s := 5)}")
 
 ```
+
+## S07-E06-E07-comprehension-part1-and-part2
+
+- comprehension => ادراک و درک کردن و خلاصه سازی
+
+![comprehension](../assets/comprehention%20in%20python.png)
+
+- in these parts we learn comprehension :
+
+    - with map
+    - with zip
+    - with math.pi
+    - in set
+    - in tuple
+    - in dict
+    - with else if
+    - with function
+    - with function and random
+    - with function and random and walrus
