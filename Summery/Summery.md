@@ -1399,5 +1399,5 @@ print(f"{(s := 5)}")
     - in dict
     - with else if
     - with function
-    - with function and random
+    - with function and random.randrange
     - with function and random and walrus

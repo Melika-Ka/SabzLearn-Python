@@ -225,3 +225,4 @@ print("--" * 20)
 names = ["reza", "melika", "ali"]
 d = {name: [i for i in range(5)] for name in names}
 print(d)
+print("--" * 20)
