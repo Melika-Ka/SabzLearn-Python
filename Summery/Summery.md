@@ -1401,3 +1401,23 @@ print(f"{(s := 5)}")
     - with function
     - with function and random.randrange
     - with function and random and walrus
+
+## S07-E08-encoding-decoding-ascii-unicode
+
+- encoding => تبدیل به یک فرمت جدید
+    - برای بهینه سازی
+- decoding => تبدیل به فرمت قبلی
+
+- `bin(number)`
+
+- word encoding
+    - `ord(char)`
+- Asci => کد برای هر کاراکتر
+    - استفاده از ۷ بیت و ۱۲۸ کاراکتر
+    - [ascii-table](https://www.rapidtables.com/code/text/ascii-table.html)
+
+- unicode => هم اسکی هم بقیه زبان ها
+    - استفاده از ۸ بیت
+    - [utf8-table](https://www.utf8-chartable.de/)
+
+- `char(ascii or unicode)`
